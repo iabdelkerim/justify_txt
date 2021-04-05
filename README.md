@@ -19,5 +19,32 @@ Pour utiliser cette API, il est nécessaire d’avoir les logiciels :
  
 <img width="1254" alt="Capture d’écran 2021-04-05 à 16 28 47" src="https://user-images.githubusercontent.com/80544586/113603374-2b1a0480-9644-11eb-8ed0-1ce065676ba3.png">
 
+L'endpoint localhost:3000/api/justify permet de récuperer du texte de longeur 80 caractères de retourner un texte justifié.
+Cette methode contient un mécanisme d’authentification.Si on essaie de l'executer sans avoir entrer le token cela nous envoie une erreur.
+Exemple:
 
+<img width="1254" alt="Capture d’écran 2021-04-05 à 16 53 41" src="https://user-images.githubusercontent.com/80544586/113606212-fc059200-9647-11eb-84c5-b640ac129ec4.png">
+
+Pour avoir son token, il faut aller dans a l'url : POST localhost:3000/api/token
+
+Dans la partie "Body", cochez le format "x-www-form-urlencoded", puis renseignez la key:value : email : nicolas.havard@epitech.eu
+
+Appuyez sur SEND.
+
+Si l'utilisateur est bien existant POSTMAN vous retourne une reponse en JSON avec un token.
+<img width="1254" alt="Capture d’écran 2021-04-05 à 16 29 36" src="https://user-images.githubusercontent.com/80544586/113606757-b8f7ee80-9648-11eb-9183-3aeb9f716318.png">
+
+Il faudra copier le token 
+Allez ensuite a l'url : POST localhost:3000/api/justify
  
+Dans la partie "Authorization", sélectionner le type : "Bearer token" et puis coller votre token.
+
+<img width="1254" alt="Capture d’écran 2021-04-05 à 17 35 22" src="https://user-images.githubusercontent.com/80544586/113607264-4d625100-9649-11eb-8486-ad30fe412c83.png">
+
+Il ne reste plus qu'à rentrer dans la partie "Body" votre texte :
+
+<img width="1254" alt="Capture d’écran 2021-04-05 à 16 40 41" src="https://user-images.githubusercontent.com/80544586/113607487-8ac6de80-9649-11eb-8a42-598e072804ce.png">
+
+
+
+
