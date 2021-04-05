@@ -11,7 +11,7 @@ Pour utiliser cette API, il est nécessaire d’avoir les logiciels :
   - jsonwebtoken
   - body-parser
   
- Pour creer utilisateur vous devez utlisez faire une requete Post avec l'url : POST localhost:3000/api/signup
+ Pour créer un utilisateur vous devez utlisez faire une requete Post avec l'url : POST localhost:3000/api/signup
  
  Dans la partie "Body", cochez le format "x-www-form-urlencoded", puis renseignez la key:value :
  
