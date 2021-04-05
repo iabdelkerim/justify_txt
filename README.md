@@ -26,7 +26,7 @@ Exemple:
 
 Pour avoir son token, il faut aller à l'url : POST localhost:3000/api/token
 
-Dans la partie "Body", cochez le format "x-www-form-urlencoded", puis renseignez la key:value. Par exemple ici email : foo@bar.com
+Dans la partie "Body", cochez le format "form-data", puis renseignez la key:value. Par exemple ici email : foo@bar.com
 Appuyez sur SEND.
 
 Si l'utilisateur est bien existant POSTMAN vous retourne une reponse en JSON avec un token.
