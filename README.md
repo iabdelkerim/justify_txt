@@ -11,13 +11,12 @@ Pour utiliser cette API, il est nécessaire d’avoir les logiciels :
   - jsonwebtoken
   - body-parser
   
- Pour créer un utilisateur vous devez utlisez faire une requete Post avec l'url : POST localhost:3000/api/signup
+ Pour créer un utilisateur vous devez faire une requete Post avec l'url : POST localhost:3000/api/signup
  
- Dans la partie "Body", cochez le format "x-www-form-urlencoded", puis renseignez la key:value :
+ Ici nous allons créer un utilisateur qui a une adresse mail : foo@bar.com
  
- par exemple :
- 
-<img width="1254" alt="Capture d’écran 2021-04-05 à 16 28 47" src="https://user-images.githubusercontent.com/80544586/113603374-2b1a0480-9644-11eb-8ed0-1ce065676ba3.png">
+<img width="1254" alt="Capture d’écran 2021-04-05 à 20 21 47" src="https://user-images.githubusercontent.com/80544586/113609892-b4cdd000-964c-11eb-9cda-f2c4e30c0350.png">
+
 
 L'endpoint localhost:3000/api/justify permet de récuperer du texte de longeur 80 caractères de retourner un texte justifié.
 Cette methode contient un mécanisme d’authentification.Si on essaie de l'executer sans avoir entrer le token cela nous envoie une erreur.
