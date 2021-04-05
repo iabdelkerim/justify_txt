@@ -25,7 +25,7 @@ Exemple:
 
 <img width="1254" alt="Capture d’écran 2021-04-05 à 16 53 41" src="https://user-images.githubusercontent.com/80544586/113606212-fc059200-9647-11eb-84c5-b640ac129ec4.png">
 
-Pour avoir son token, il faut aller dans a l'url : POST localhost:3000/api/token
+Pour avoir son token, il faut aller à l'url : POST localhost:3000/api/token
 
 Dans la partie "Body", cochez le format "x-www-form-urlencoded", puis renseignez la key:value : email : nicolas.havard@epitech.eu
 
